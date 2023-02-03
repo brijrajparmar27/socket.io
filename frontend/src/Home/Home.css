@@ -1,0 +1,49 @@
+.home {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 8.5fr 1.5fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "chat"
+    "inputs";
+}
+.chats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: chat;
+}
+.chats .chats_contain {
+  border-radius: 10px;
+  outline: 1px solid gray;
+  width: 90%;
+  height: 90%;
+}
+.inputs {
+  grid-area: inputs;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_contain {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 90%;
+  width: 90%;
+}
+.input_contain form {
+  display: flex;
+  gap: 10px;
+}
+.input_contain form .input_tb {
+  flex: 8;
+}
+.input_contain form input {
+  padding: 0px 5px;
+  height: 30px;
+}
+.input_contain form .submit {
+  flex: 2;
+}
